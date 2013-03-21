@@ -12,13 +12,13 @@ Usage:
 
 1. copy the MhNavigationView.js to "./ux/touch/"
 2. load your the file in your "./app.js"
-
+```javascript
     Ext.Loader.setPath({
     	'Ext': 'touch/src',
     	'Ext.ux.touch': 'ux/touch',
     	...
     });
-
+```
 3. create a NavigationView and extend from "Ext.ux.touch.MhNavigationView" instead of "Ext.navigation.View"
 or use the "xtype: 'mhnavigationview" instead of "navigationview".
 
@@ -26,6 +26,7 @@ or use the "xtype: 'mhnavigationview" instead of "navigationview".
 
 5. add Views to the Navigation like this.
 
+```javascript
     this.getMyNavigation().push(
     	Ext.createByAlias(
     		'MyView',
@@ -36,7 +37,7 @@ or use the "xtype: 'mhnavigationview" instead of "navigationview".
     		}
     	)
     ); 
-
+```
 6. push more than one View to the Navigation
 
 7. Look at the DOM, you will see only the active View is in DOM the rest is removed.
