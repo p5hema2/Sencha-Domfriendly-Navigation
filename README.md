@@ -25,7 +25,7 @@ or use the "xtype: 'mhnavigationview" instead of "navigationview".
 
 - create some Views and give them an "alias" like "MyView1"
 
-5. add Views to the Navigation like this.
+- add Views to the Navigation like this.
 
 ```javascript
     this.getMyNavigation().push(
