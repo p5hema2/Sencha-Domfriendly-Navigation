@@ -12,6 +12,7 @@ Usage:
 
 1. copy the MhNavigationView.js to "./ux/touch/"
 2. load your the file in your "./app.js"
+
 ```javascript
     Ext.Loader.setPath({
     	'Ext': 'touch/src',
