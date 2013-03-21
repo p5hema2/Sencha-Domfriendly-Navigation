@@ -10,8 +10,8 @@ So i have written this Navigation based on Sencha Touch 2.2, which removes old v
 Usage:
 ------
 
-1. copy the MhNavigationView.js to "./ux/touch/"
-2. load your the file in your "./app.js"
+- copy the MhNavigationView.js to "./ux/touch/"
+- load your the file in your "./app.js"
 
 ```javascript
     Ext.Loader.setPath({
@@ -20,10 +20,10 @@ Usage:
     	...
     });
 ```
-3. create a NavigationView and extend from "Ext.ux.touch.MhNavigationView" instead of "Ext.navigation.View"
+- create a NavigationView and extend from "Ext.ux.touch.MhNavigationView" instead of "Ext.navigation.View"
 or use the "xtype: 'mhnavigationview" instead of "navigationview".
 
-4. create some Views and give them an "alias" like "MyView1"
+- create some Views and give them an "alias" like "MyView1"
 
 5. add Views to the Navigation like this.
 
@@ -39,13 +39,13 @@ or use the "xtype: 'mhnavigationview" instead of "navigationview".
     	)
     ); 
 ```
-6. push more than one View to the Navigation
+- push more than one View to the Navigation
 
-7. Look at the DOM, you will see only the active View is in DOM the rest is removed.
+- Look at the DOM, you will see only the active View is in DOM the rest is removed.
 
-8. hit the "Back" button, the previous view will be recreated before the active view and the active view will pop
+- hit the "Back" button, the previous view will be recreated before the active view and the active view will pop
 
-9. Enjoy!
+- Enjoy!
 
 
 Pro:
