@@ -8,15 +8,16 @@ A problem of the navigation in Sencha is that it is not realy dom-friendly.
 So i have written this Navigation based on Sencha Touch 2.2, which removes old views from the DOM upon Navigation and recreates them on backtap.
 
 Usage:
+------
 
 1. copy the MhNavigationView.js to "./ux/touch/"
 2. load your the file in your "./app.js" 
 
-Ext.Loader.setPath({
-    'Ext': 'touch/src',
-    'Ext.ux.touch': 'ux/touch'
-	...
-});
+	Ext.Loader.setPath({
+		'Ext': 'touch/src',
+		'Ext.ux.touch': 'ux/touch'
+		...
+	});
 
 3. create a NavigationView and extend from "Ext.ux.touch.MhNavigationView" instead of "Ext.navigation.View"
 or use the "xtype: 'mhnavigationview" instead of "navigationview".
@@ -25,16 +26,16 @@ or use the "xtype: 'mhnavigationview" instead of "navigationview".
 
 5. add Views to the Navigation like this.
 
-this.getMyNavigation().push(
-	Ext.createByAlias(
-		'MyView', 
-		{
-			myInitaloption1: 'foo', 
-			myInitaloption1: 'bar', 
-			...
-		}
-	)
-);
+	this.getMyNavigation().push(
+		Ext.createByAlias(
+			'MyView', 
+			{
+				myInitaloption1: 'foo', 
+				myInitaloption1: 'bar', 
+				...
+			}
+		)
+	);
 
 6. push more than one View to the Navigation
 
@@ -46,12 +47,15 @@ this.getMyNavigation().push(
 
 
 Pro:
+----
 
 - your DOM will remove the previous views upon deeper navigation
 
 Cons:
+-----
 
 - previous view doesn't save there scroll position or something else, cause they are new created
+
 
 happy Easter.
 Martin Heß
