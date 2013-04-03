@@ -2,13 +2,20 @@ Sencha-Domfriendly-Navigation
 =============================
 
 version 0.1.0  
-based on Sencha Touch 2.2.0b1
+based on Sencha Touch 2.2.0b1  
+written by [Martin Heﬂ](https://github.com/p5hema2)
 
-A problem of the navigation in Sencha is that it is not realy dom-friendly.  
+tested against:   
+- Sencha Touch 2.2.0b1  
+- Sencha Touch 2.2.0b2   
+
+## About:
+
+A problem of the navigation in Sencha is, that it is not really DOM-friendly.  
 So i have written this Navigation based on Sencha Touch 2.2, which removes old views from the DOM upon Navigation and recreates them on backtap.
 
-Usage:
-------
+## Usage:
+
 
 - copy the MhNavigationView.js to "./ux/touch/"
 - load your the file in your "./app.js"
@@ -48,19 +55,16 @@ or use the "xtype: 'mhnavigationview" instead of "navigationview".
 - Enjoy!
 
 
-Pro:
-----
+### Pro:
+
 
 - your DOM will remove the previous views upon deeper navigation
 
-Cons:
------
+### Cons:
 
 - previous view doesn't save there scroll position or something else, cause they are new created
 
-
-
-
-
-happy Easter.<br>
-Martin He√ü
+<br><br>
+Greetings,  
+[Martin Heﬂ](https://github.com/p5hema2)
+### Don't forget to star the repo. :-)
