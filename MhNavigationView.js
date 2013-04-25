@@ -2,20 +2,20 @@
  * Dom Friendly Navigation View
  * based on sencha touch 2.2.0 beta 1
  * 
- * @class Ext.ux.touch.MhNavigationView
- * @version 0.1.0
- * @author Martin Heß <p5hema2@github>
+ * @class Ext.ux.touch.FlyNavigationView
+ * @version 1.0.1
+ * @author Martin Hess <p5hema2@github>
  */
-Ext.define('Ext.ux.touch.MhNavigationView', {
+Ext.define('Ext.ux.touch.FlyNavigationView', {
 	extend : 'Ext.navigation.View',
-	xtype : 'mhnavigationview',
+	xtype : 'flynavigationview',
 	
 	config: {
 //	    /**
 //	     * @cfg
 //	     * @inheritdoc
 //	     */
-//        baseCls: Ext.baseCSSPrefix + 'mhnavigationview',
+//        baseCls: Ext.baseCSSPrefix + 'flynavigationview',
 //
 //        /**
 //         * @cfg {Boolean/Object} navigationBar
@@ -188,10 +188,13 @@ Ext.define('Ext.ux.touch.MhNavigationView', {
          * modification start
          */
         var obj = {};
-        // get view alias
-        obj.alias = view.alias
+
+        // get view xtype
+        obj.xtype = view.xtype
+        
         // get view initialconfig
         obj.args = view.initialConfig
+        
         // store in historystack
         this.getHistoryStack().push(obj)
         /*
@@ -258,7 +261,7 @@ Ext.define('Ext.ux.touch.MhNavigationView', {
         }
         
         // create and add view to navigation as first innerItem
-        view = Ext.createByAlias(historyStack[historyStack.length-2].alias[0],historyStack[historyStack.length-2].args)
+        view = Ext.widget(historyStack[historyStack.length-2].xtype,historyStack[historyStack.length-2].args)
         this.insertFirst(view);
         
         // pop current view from historystack

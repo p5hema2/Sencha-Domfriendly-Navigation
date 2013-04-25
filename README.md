@@ -1,13 +1,20 @@
 Sencha-Domfriendly-Navigation
 =============================
 
-version 0.1.0  
-based on Sencha Touch 2.2.0b1  
-written by [Martin Heﬂ](https://github.com/p5hema2)
+version 1.0.1
+based on Sencha Touch 2.2.0
+written by [Martin He](https://github.com/p5hema2)
 
 tested against:   
 - Sencha Touch 2.2.0b1  
-- Sencha Touch 2.2.0b2   
+- Sencha Touch 2.2.0b2  
+- Sencha Touch 2.2.0rc  
+- Sencha Touch 2.2.0
+
+## changes to Version 0.1.0
+
+- removed to create views by alias, views are created by xtype instead
+
 
 ## About:
 
@@ -30,13 +37,13 @@ So i have written this Navigation based on Sencha Touch 2.2, which removes old v
 - create a NavigationView and extend from "Ext.ux.touch.MhNavigationView" instead of "Ext.navigation.View"
 or use the "xtype: 'mhnavigationview" instead of "navigationview".
 
-- create some Views and give them an "alias" like "MyView1"
+- create some Views and give them an "xtype" like "MyView1"
 
 - add Views to the Navigation like this.
 
 ```javascript
     this.getMyNavigation().push(
-    	Ext.createByAlias(
+    	Ext.widget(
     		'MyView',
     		{
     			myInitaloption1: 'foo',
@@ -66,5 +73,5 @@ or use the "xtype: 'mhnavigationview" instead of "navigationview".
 
 <br><br>
 Greetings,  
-[Martin Heﬂ](https://github.com/p5hema2)
+[Martin Hess](https://github.com/p5hema2)
 ### Don't forget to star the repo. :-)
