@@ -3,7 +3,7 @@ Sencha-Domfriendly-Navigation
 
 version 1.0.1
 based on Sencha Touch 2.2.0
-written by [Martin He](https://github.com/p5hema2)
+written by [Martin Hess](https://github.com/p5hema2)
 
 tested against:   
 - Sencha Touch 2.2.0b1  
