@@ -25,6 +25,14 @@ So i have written this Navigation based on Sencha Touch 2.2, which removes old v
 
 
 - copy the MhNavigationView.js to "./ux/touch/"
+
+- add ",${app.dir}/ux/touch" to "./.sencha/app/sencha/cfg" to variable "app.classpath" 
+(builder needs to know where the plugin is located)
+
+```
+app.classpath=${app.dir}/app.js,${app.dir}/app,${app.dir}/ux/touch
+```
+
 - load your the file in your "./app.js"
 
 ```javascript
