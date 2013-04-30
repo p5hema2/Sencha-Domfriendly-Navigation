@@ -2,8 +2,9 @@ Sencha-Domfriendly-Navigation
 =============================
 
 version 1.0.1
-based on Sencha Touch 2.2.0
-written by [Martin Hess](https://github.com/p5hema2)
+based on Sencha Touch 2.2.0  
+written by [Martin Hess](https://github.com/p5hema2)  
+@ [flyacts GmbH](http://www.flyacts.com)
 
 tested against:   
 - Sencha Touch 2.2.0b1  
@@ -24,7 +25,7 @@ So i have written this Navigation based on Sencha Touch 2.2, which removes old v
 ## Usage:
 
 
-- copy the MhNavigationView.js to "./ux/touch/"
+- copy the DomFriendlyNavigationView.js to "./ux/touch/"
 
 - add ",${app.dir}/ux/touch" to "./.sencha/app/sencha/cfg" to variable "app.classpath" 
 (builder needs to know where the plugin is located)
@@ -42,7 +43,7 @@ app.classpath=${app.dir}/app.js,${app.dir}/app,${app.dir}/ux/touch
     	...
     });
 ```
-- create a NavigationView and extend from "Ext.ux.touch.MhNavigationView" instead of "Ext.navigation.View"
+- create a NavigationView and extend from "Ext.ux.touch.DomFriendlyNavigationView" instead of "Ext.navigation.View"
 or use the "xtype: 'mhnavigationview" instead of "navigationview".
 
 - create some Views and give them an "xtype" like "MyView1"
@@ -81,5 +82,6 @@ or use the "xtype: 'mhnavigationview" instead of "navigationview".
 
 <br><br>
 Greetings,  
-[Martin Hess](https://github.com/p5hema2)
+[Martin Hess](https://github.com/p5hema2)  
+@ [flyacts GmbH](http://www.flyacts.com)
 ### Don't forget to star the repo. :-)
