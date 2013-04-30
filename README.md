@@ -16,7 +16,6 @@ tested against:
 
 - removed to create views by alias, views are created by xtype instead
 
-
 ## About:
 
 A problem of the navigation in Sencha is, that it is not really DOM-friendly.  
