@@ -79,6 +79,25 @@ or use the "xtype: 'mhnavigationview" instead of "navigationview".
 ### Cons:
 
 - previous view doesn't save there scroll position or something else, cause they are new created
+(you can save them manualy in the controller on "view --> event --> hide" and add them values onShow again)
+
+Example Scroller:
+
+```javascript
+    /**
+     * this :  is the controller for the view in this case the view is a list
+     * this.scrollY is a local variable in the controller to save the scrollposition outside the view
+     * 
+     * p.s. you have to define the listener for VIEW.on('show', this.onShow, this) and respective hide beforehand of course
+     */
+    onHide: function() {
+        this.scrollY = Math.abs(this.getList().getScrollable().getScroller().getTranslatable().y);
+    },
+
+    onShow: function() {
+        this.getList().getScrollable().getScroller().setInitialOffset({ x: 0, y: this.scrollY ? this.scrollY : 0})
+    },
+```
 
 <br><br>
 Greetings,  
