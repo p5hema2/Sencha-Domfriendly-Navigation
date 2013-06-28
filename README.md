@@ -11,6 +11,7 @@ tested against:
 - Sencha Touch 2.2.0b2  
 - Sencha Touch 2.2.0rc  
 - Sencha Touch 2.2.0
+- Sencha Touch 2.2.1
 
 ## changes to Version 0.1.0
 
