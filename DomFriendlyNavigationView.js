@@ -2,10 +2,11 @@
  * Dom Friendly Navigation View
  * based on sencha touch 2.2.0 beta 1
  * 
+ * I have commentet out the orginal code from Sencha. You are free to remove it. It is not written by me.
+ * 
  * @class Ext.ux.touch.DomFriendlyNavigationView
  * @version 1.0.1
  * @author Martin Hess <https://github.com/p5hema2>
- * @author flyacts GmbH <https://github.com/flyacts>
  */
 Ext.define('Ext.ux.touch.DomFriendlyNavigationView', {
 	extend : 'Ext.navigation.View',
