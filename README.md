@@ -2,9 +2,8 @@ Sencha-Domfriendly-Navigation
 =============================
 
 version 1.0.1
-based on Sencha Touch 2.2.0  
-written by [Martin Hess](https://github.com/p5hema2)  
-@ [flyacts GmbH](http://www.flyacts.com)
+based on Sencha Touch 2.2.0 && 2.3
+written by [Martin Hess](https://github.com/p5hema2)
 
 tested against:   
 - Sencha Touch 2.2.0b1  
@@ -12,6 +11,8 @@ tested against:
 - Sencha Touch 2.2.0rc  
 - Sencha Touch 2.2.0
 - Sencha Touch 2.2.1
+- Sencha Touch 2.3.0
+- Sencha Touch 2.3.1
 
 ## changes to Version 0.1.0
 
@@ -102,5 +103,5 @@ Example Scroller:
 <br><br>
 Greetings,  
 [Martin Hess](https://github.com/p5hema2)  
-@ [flyacts GmbH](http://www.flyacts.com)
+
 ### Don't forget to star the repo. :-)
